@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+.home-container {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #141414;
+  border-bottom: 1px solid #333;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #e50914;
+}
+
+.loading {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20%;
+}
+
+.slider {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.slider-item {
+  position: relative;
+}
+
+.slider-image {
+  width: 100%;
+  height: 500px;
+
+  border-radius: 10px;
+}
+
+.slider-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.slider-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.download-button {
+  background: #e50914;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.download-button:hover {
+  background: #f40612;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  color: #fff;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
