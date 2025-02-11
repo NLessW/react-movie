@@ -23,7 +23,10 @@ function Detail() {
 
   return (
     <div className="detail-container">
-      <button className="back-button" onClick={() => history.push("/")}>
+      <button
+        className="back-button"
+        onClick={() => history.push("/react-movie")}
+      >
         Back to Home
       </button>
       <div className="detail-images">
