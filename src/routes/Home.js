@@ -31,6 +31,20 @@ function Home() {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
+    appendDots: (dots) => (
+      <div
+        style={{
+          position: "absolute",
+          bottom: "10px",
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
   };
 
   return (
@@ -76,4 +90,5 @@ function Home() {
     </div>
   );
 }
+
 export default Home;

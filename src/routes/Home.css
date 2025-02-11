@@ -85,6 +85,20 @@ body {
   font-size: 30px;
   color: #fff;
 }
+
+.slick-dots {
+  bottom: 10px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #888;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #e50914;
+}
+
 .movies {
   display: flex;
   flex-wrap: wrap;
