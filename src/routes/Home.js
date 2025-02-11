@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -29,6 +30,7 @@ function Home() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: true,
   };
 
   return (
@@ -42,12 +44,18 @@ function Home() {
         <>
           <Slider {...settings} className="slider">
             {movies.map((movie) => (
-              <div key={movie.id}>
+              <div key={movie.id} className="slider-item">
                 <img
                   src={movie.background_image}
                   alt={movie.title}
                   className="slider-image"
                 />
+                <div className="slider-content">
+                  <h2 className="slider-title">{movie.title}</h2>
+                  <Link to={`/movie/${movie.id}`} className="download-button">
+                    Go Download
+                  </Link>
+                </div>
               </div>
             ))}
           </Slider>
